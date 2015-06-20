@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "Show rails using webpack as its asset manager.",
   "scripts": {
-    "start": "npm run build",
     "build": "webpack --config webpack/config.js --progress --profile --colors",
-    "watch": "webpack -w --config webpack/config.js --progress --profile --colors"
+    "watch": "webpack -w --config webpack/config.js --progress --profile --colors",
+    "postinstall": "npm run build"
   },
   "author": "Derek Dahmer",
   "dependencies": {
