@@ -19,6 +19,4 @@ config.plugins = config.plugins.concat( [
   }),
 ]);
 
-console.log("Plugins: ", config.plugins);
-
 module.exports = config;
