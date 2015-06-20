@@ -28,3 +28,6 @@ config/initializers/sanitize_email_extend.rb
 public/assets/*
 
 .DS_Store
+
+node_modules/
+public/bundle.js
