@@ -1,0 +1,30 @@
+# Ignore bundler config.
+/.bundle
+vendor/bundle
+.ruby-gemset
+.envrc
+.powrc
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+database.yml
+
+.env
+.env.swp
+.env.development
+.env.production
+
+.rspec
+
+config/initializers/sanitize_email_extend.rb
+
+.gitconfig
+public/assets/*
+
+.DS_Store
