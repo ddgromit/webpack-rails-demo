@@ -13,7 +13,8 @@ module.exports = {
   module: {
     loaders: [
       // Babel is a transpiler that supports ES6 and JSX
-      { test: /\.js$/, exclude: /(node_modules)|(bootstrap.*\.js)/, loaders: ['babel-loader']}
+      { test: /\.js$/, exclude: /(node_modules)|(bootstrap.*\.js)/, loaders: ['babel-loader']},
+      { test: /\.less$/, loader: 'style!css!less'}
     ]
   },
 
