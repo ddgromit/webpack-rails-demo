@@ -5,6 +5,7 @@
   "scripts": {
     "build": "webpack --config webpack/config.js --progress --profile --colors",
     "watch": "webpack -w --config webpack/config.js --progress --profile --colors",
+    "dev": "webpack-dev-server --config webpack/config.dev.js",
     "postinstall": "npm run build"
   },
   "author": "Derek Dahmer",
@@ -14,5 +15,8 @@
     "babel-loader": "^5.1.4",
     "jquery": "^2.1.4",
     "webpack": "^1.9.11"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.9.0"
   }
 }

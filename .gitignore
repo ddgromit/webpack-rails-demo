@@ -31,3 +31,4 @@ public/assets/*
 
 node_modules/
 public/bundle.js
+npm-debug.log

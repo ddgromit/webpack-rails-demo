@@ -17,13 +17,14 @@ module.exports = {
     ]
   },
 
-  plugins: [],
-
+  plugins: [
+  ],
+  
   resolve: {
     extensions: [
       '',
       '.js',
       '.jsx'
     ]
-  }
+  },
 };

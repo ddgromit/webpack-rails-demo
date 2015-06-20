@@ -2,7 +2,11 @@
 <html>
 <head>
   <title>Webpack Rails Demo</title>
-  <%= javascript_include_tag '/bundle.js' %>
+  <% if Rails.env.development? %>
+    <%= javascript_include_tag 'http://localhost:8080/bundle.js' %>
+  <% else %>
+    <%= javascript_include_tag '/bundle.js' %>
+  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>
