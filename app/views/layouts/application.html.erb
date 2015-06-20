@@ -3,6 +3,7 @@
 <head>
   <title>Webpack Rails Demo</title>
   <% if Rails.env.development? %>
+    <%= javascript_include_tag 'http://localhost:3001/webpack-dev-server.js' %>
     <%= javascript_include_tag 'http://localhost:3001/build/bundle.styles.js' %>
     <%= javascript_include_tag 'http://localhost:3001/build/bundle.app.js' %>
   <% else %>

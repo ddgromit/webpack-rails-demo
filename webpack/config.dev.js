@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 config.devServer = {
   noInfo: true,
-  inline: true,
+  inline: false,
   port: 3001
 };
 
