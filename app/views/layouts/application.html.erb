@@ -3,11 +3,11 @@
 <head>
   <title>Webpack Rails Demo</title>
   <% if Rails.env.development? %>
-    <%= javascript_include_tag 'http://localhost:3001/bundle.styles.js' %>
-    <%= javascript_include_tag 'http://localhost:3001/bundle.app.js' %>
+    <%= javascript_include_tag 'http://localhost:3001/build/bundle.styles.js' %>
+    <%= javascript_include_tag 'http://localhost:3001/build/bundle.app.js' %>
   <% else %>
-    <%= javascript_include_tag '/bundle.styles.js' %>
-    <%= javascript_include_tag '/bundle.app.js' %>
+    <%= javascript_include_tag '/build/bundle.styles.js' %>
+    <%= javascript_include_tag '/build/bundle.app.js' %>
   <% end %>
   <%= csrf_meta_tags %>
 </head>
