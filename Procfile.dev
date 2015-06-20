@@ -1,0 +1,2 @@
+web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
+webpack: npm run watch
