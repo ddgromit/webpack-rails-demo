@@ -2,25 +2,26 @@ var webpack = require('webpack');
 
 module.exports = {
   // Top level file that requires all the other files for the browser.
-  entry: ["./app/assets/javascripts/app"],
+  entry: {
+    app: "./app/assets/javascripts/app",
+    styles: "./app/assets/stylesheets/application.less"
+  },
 
-  // The single compiled file will be build/bundle.js
   output: {
     path: './public',
-    filename: 'bundle.js'
+    filename: 'bundle.[name].js'
   },
 
   module: {
     loaders: [
       // Babel is a transpiler that supports ES6 and JSX
       { test: /\.js$/, exclude: /(node_modules)|(bootstrap.*\.js)/, loaders: ['babel-loader']},
-      { test: /\.less$/, loader: 'style!css!less'}
+      { test: /\.less$/, loader: "style-loader!css-loader!less-loader"}
     ]
   },
 
-  plugins: [
-  ],
-  
+  plugins: [],
+
   resolve: {
     extensions: [
       '',

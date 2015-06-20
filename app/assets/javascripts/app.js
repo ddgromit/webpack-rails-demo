@@ -1,5 +1,4 @@
 import $ from 'jquery';
-require('../stylesheets/application.less');
 
 console.log('Running app.js');
 

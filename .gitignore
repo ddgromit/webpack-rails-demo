@@ -30,5 +30,5 @@ public/assets/*
 .DS_Store
 
 node_modules/
-public/bundle.js
+public/bundle.*.js
 npm-debug.log
